@@ -1,1 +1,39 @@
-<p>hello world</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple Galerie nanogallery2</title>
+
+    <!-- 1. Inclusion de jQuery (obligatoire) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+    <!-- 2. Inclusion du CSS de nanogallery2 -->
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+
+    <!-- 3. Inclusion du JS de nanogallery2 -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+</head>
+<body>
+
+    <h1>Mon Album Photo</h1>
+
+    <!-- 4. Conteneur de la galerie avec balises HTML -->
+    <div id="MaGalerie" data-nanogallery2='{
+        "itemsBaseURL": "https://nanogallery2.nanostudio.org/samples/",
+        "thumbnailWidth": "auto",
+        "thumbnailHeight": 180,
+        "colorScheme": "light",
+        "galleryTheme": { 
+            "navigationBar": { "background": "#f1f1f1" } 
+        },
+        "items": [
+            { "src": "berlin1.jpg", "srct": "berlin1_t.jpg", "title": "Berlin 1" },
+            { "src": "berlin2.jpg", "srct": "berlin2_t.jpg", "title": "Berlin 2" },
+            { "src": "berlin3.jpg", "srct": "berlin3_t.jpg", "title": "Berlin 3" }
+        ]
+    }'>
+    </div>
+
+</body>
+</html>
